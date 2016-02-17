@@ -1,0 +1,69 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{pifont} % for cmark or xmark
+\usepackage{xcolor}
+\newcommand{\cmark}{\textcolor{green!65!black}{\ding{51}}}
+\newcommand{\xmark}{\textcolor{red!90!black}{\ding{55}}}
+
+\author{Florian Thuin}
+\title{LINGI2132 --- Languages and translators}
+
+\begin{document}
+    \maketitle
+  \section{Introduction}
+  \subsection{Introduction}
+
+  This course will be divided in two parts: Compilers and Domain Specific
+  Languages (DSL). \newline
+
+  Compilers for all programming languages share the same principles, knowing
+  them helps to understand how every programming language works. Often, new
+  programming languages share the syntax, semantics and ideas and understanding
+  the underlying principles will help you to learn new programming languages.
+  \newline
+
+  Famous computer scientists work(ed) on compilers:
+
+  \begin{description}
+    \item[Fortran]: John Backus* (1957)
+    \item[Lisp]: John McCarthy \& Steve Russell (1958)
+    \item[C]: Dennis M. Ritchie* (1972)
+    \item[C++]: Bjarne Stroustrup (1979)
+    \item[Smalltalk]: Alan Kay* (1980)
+    \item[Python]: Guido Van Rossum (1991)
+    \item[Java]: James Gosling (1995)
+    \item[Ruby]: Yukihiro Matsumoto (1995)
+    \item[Scala]: Martin Odersky (2003)
+  \end{description}
+
+{\tiny
+\noindent\begin{tabular}{lp{0.06\linewidth}p{0.08\linewidth}p{0.07\linewidth}p{0.09\linewidth}p{0.05\linewidth}p{0.08\linewidth}p{0.08\linewidth}p{0.1\linewidth}p{0.07\linewidth}}
+    Language    & Fortran     & Lisp          & C                 & C++               & Smalltalk & Python           & Java          & Ruby               & Scala \\
+    \toprule
+    Inventor    & John Backus & John McCarthy & Dennis M. Ritchie & Bjarne Stroustrup & Alan Kay  & Guido Van Rossum & James Gosling & Yukihiro Matsumoto & Martin Odersky \\
+    \midrule
+    Year        & 1957        & 1958          & 1972              & 1979              & 1980      & 1991             & 1995          & 1995               & 2003 \\
+    \midrule
+    Compiled    & \cmark{}    & \xmark{}      & \cmark{}          & \cmark{}          & \cmark{}  & \cmark{}         & \cmark{}      & \xmark{}           & \cmark{} \\
+    \midrule
+    Interpreted & \xmark{}    & \cmark{}      & \xmark{}          & \xmark{}          & \xmark{}  & \cmark{}         & \cmark{}      & \cmark{}           & \cmark{} \\
+    \midrule
+    Static      & \cmark{}    & \xmark{}      & \cmark{}          & \cmark{}          & \xmark{}  & \xmark{}         & \cmark{}      & \xmark{}           & \cmark{} \\
+    \midrule
+    Dynamic     & \xmark{}    & \cmark{}      & \xmark{}          & \xmark{}          & \cmark{}  & \cmark{}         & \xmark{}      & \cmark{}           & \xmark{} \\
+    \midrule
+    on a VM     &             &               & \xmark{}          & \xmark{}          & \cmark{}  & \cmark{}         & \cmark{}      & \cmark{}           & \cmark{} \\
+    \bottomrule
+\end{tabular}
+}
+
+
+  % TODO : Ajouter l'image du compilateur
+  % TODO : Ajouter l'image de l'interpréteur
+
+  
+\end{document}
