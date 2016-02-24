@@ -1,7 +1,6 @@
 \documentclass[12pt, a4paper]{article}
 
 \usepackage[english]{babel}
-<<<<<<< HEAD
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{booktabs}
@@ -62,7 +61,50 @@
 \end{tabular}
 }
 
+    \subsection{Compiler}
   % TODO : Ajouter l'image du compilateur
+    \subsubsection{Lexical analysis}
+    \subsubsection{Parsing/syntax analysis}
+    \subsubsection{Semantic analysis}
+    \subsubsection{Optimization}
+    \subsubsection{Code generation}
+    \subsection{Interpreter}
   % TODO : Ajouter l'image de l'interpréteur
+
+  \section{Lexical analysis}
+  \paragraph{Exercise}
+  How many tokens ?
+  \begin{center}
+      \textcolor{blue}{x}
+      \textcolor{green!60!black}{=}
+      \textcolor{red}{0}
+      \textcolor{green!60!black}{;}
+      \verb#\n\t#
+      \textcolor{gray}{while}
+      \textcolor{green!60!black}{(}
+      \textcolor{blue}{x}
+      \textcolor{green!60!black}{<}
+      \textcolor{red}{10}
+      \textcolor{green!60!black}{)}
+      \textcolor{green!60!black}{\{}
+      \verb#\n\t#
+      \textcolor{blue}{x}
+      \textcolor{green!60!black}{++}
+      \textcolor{green!60!black}{;}
+      \verb#\n#
+      \textcolor{green!60!black}{\}}
+  \end{center}
+  W : whitespace,
+  \textcolor{gray}{K : keyword},
+  \textcolor{blue}{I : identifier},
+  \textcolor{red}{N : number},
+  \textcolor{green!60!black}{O : other tokens}.
+  \section{Parsing}
+  \section{Semantic analysis}
+  \section{JVM and code generation}
+  \section{Garbage collection}
+  \section{Introduction to Scala}
+  \section{By-name parameters}
+  \section{Traits}
 
 \end{document}
